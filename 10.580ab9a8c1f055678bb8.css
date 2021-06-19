@@ -1,0 +1,1506 @@
+@font-face {
+    font-family: nokian11regular;
+    src: url(/fonts/233c4cf4afb47a7063cbd53659da97d5.woff2) format("woff2"), url(/fonts/d98d18692a61bc8c7e175edb49855527.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Lost and Forelorn;
+    src: url(/fonts/e67bed660006fd02617734fa44988acc.woff) format("woff")
+}
+
+@font-face {
+    font-family: Coldstyle;
+    src: url(/fonts/bc41796998a0e7653ebcca5ad502674d.woff) format("woff")
+}
+
+.triviadeath2 button,
+.triviadeath2 input,
+.triviadeath2 select,
+.triviadeath2 textarea {
+    outline: none
+}
+
+.triviadeath2 .game-page span,
+.triviadeath2 div,
+.triviadeath2 h1,
+.triviadeath2 h2,
+.triviadeath2 h3,
+.triviadeath2 h4,
+.triviadeath2 h5,
+.triviadeath2 h6,
+.triviadeath2 p,
+.triviadeath2 td,
+.triviadeath2 th {
+    font-family: Lost and Forelorn;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    font-kerning: auto;
+    line-height: 1.2em;
+    margin: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.triviadeath2 .errorText {
+    color: #fff
+}
+
+.triviadeath2 .visuallyhidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0
+}
+
+.triviadeath2 .logo-image {
+    height: 100%;
+    background-color: #000;
+    background-image: url(/images/f64571bbde4fd4d9365aa49331302073.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    margin: auto
+}
+
+.triviadeath2 .controller-content {
+    width: 100%;
+    margin: 0 auto
+}
+
+.triviadeath2 canvas {
+    background-color: transparent;
+    border: 0;
+    max-width: 100%
+}
+
+.triviadeath2 .artifactButton {
+    border: 0 solid #000;
+    background-color: transparent;
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-image: url(/images/7fd07503c719d236967a09308896d9e4.png)
+}
+
+.triviadeath2 .artifactButton.button-group button,
+.triviadeath2 .artifactButton.button-group button:active,
+.triviadeath2 .artifactButton.button-group button:focus,
+.triviadeath2 .artifactButton.button-group button:hover,
+.triviadeath2 .artifactButton.button-group button:hover:enabled {
+    background-color: transparent
+}
+
+.triviadeath2 .button-group {
+    margin: 5px auto
+}
+
+.triviadeath2 .button-group .btn:first-child:not(:last-child) {
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px
+}
+
+.triviadeath2 .button-group button {
+    background: #000;
+    margin: 5px;
+    font-family: Lost and Forelorn;
+    font-size: 32px;
+    font-weight: 500;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: block;
+    white-space: normal;
+    word-wrap: break-word
+}
+
+.triviadeath2 .button-group button:hover:enabled {
+    color: inherit;
+    background: #000
+}
+
+.triviadeath2 .button-group button.btn:focus {
+    color: inherit
+}
+
+.triviadeath2 .button-group button.selected,
+.triviadeath2 .button-group button:active:enabled {
+    background: #fff;
+    color: #000
+}
+
+.triviadeath2 .button-group.selected button,
+.triviadeath2 .button-group.selected button.btn:focus,
+.triviadeath2 .button-group.selected button:hover:enabled {
+    background-color: #fff;
+    color: #000
+}
+
+.triviadeath2 .button-group .censor-button {
+    background-color: #900
+}
+
+.triviadeath2 .button-group.red button {
+    background-color: red
+}
+
+.triviadeath2 .button-group.green button {
+    background-color: #0f0
+}
+
+.triviadeath2 .button-group.blue button {
+    background-color: #00f
+}
+
+.triviadeath2 .button-group.yellow button {
+    background-color: #ff0;
+    color: #000
+}
+
+.triviadeath2 .button-group.white button {
+    background-color: #fff;
+    color: #000
+}
+
+.triviadeath2 .button-group.Key1 button {
+    background-position: 50% 0
+}
+
+.triviadeath2 .button-group.Key2 button {
+    background-position: 50% 4.34783%
+}
+
+.triviadeath2 .button-group.Key3 button {
+    background-position: 50% 8.69565%
+}
+
+.triviadeath2 .button-group.Key4 button {
+    background-position: 50% 13.04348%
+}
+
+.triviadeath2 .button-group.Key5 button {
+    background-position: 50% 17.3913%
+}
+
+.triviadeath2 .button-group.Key6 button {
+    background-position: 50% 21.73913%
+}
+
+.triviadeath2 .button-group.Key7 button {
+    background-position: 50% 26.08696%
+}
+
+.triviadeath2 .button-group.Key8 button {
+    background-position: 50% 30.43478%
+}
+
+.triviadeath2 .button-group.Key9 button {
+    background-position: 50% 34.78261%
+}
+
+.triviadeath2 .button-group.Key10 button {
+    background-position: 50% 39.13043%
+}
+
+.triviadeath2 .button-group.Key11 button {
+    background-position: 50% 43.47826%
+}
+
+.triviadeath2 .button-group.Key12 button {
+    background-position: 50% 47.82609%
+}
+
+.triviadeath2 .button-group.Key13 button {
+    background-position: 50% 52.17391%
+}
+
+.triviadeath2 .button-group.Key14 button {
+    background-position: 50% 56.52174%
+}
+
+.triviadeath2 .button-group.Key15 button {
+    background-position: 50% 60.86957%
+}
+
+.triviadeath2 .button-group.Key16 button {
+    background-position: 50% 65.21739%
+}
+
+.triviadeath2 .button-group.Key17 button {
+    background-position: 50% 69.56522%
+}
+
+.triviadeath2 .button-group.Key18 button {
+    background-position: 50% 73.91304%
+}
+
+.triviadeath2 .button-group.Key19 button {
+    background-position: 50% 78.26087%
+}
+
+.triviadeath2 .button-group.Key20 button {
+    background-position: 50% 82.6087%
+}
+
+.triviadeath2 .button-group.Key21 button {
+    background-position: 50% 86.95652%
+}
+
+.triviadeath2 .button-group.Key22 button {
+    background-position: 50% 91.30435%
+}
+
+.triviadeath2 .button-group.Key23 button {
+    background-position: 50% 95.65217%
+}
+
+.triviadeath2 .button-group.Key24 button {
+    background-position: 50% 100%
+}
+
+.triviadeath2 .Key1,
+.triviadeath2 .Key2,
+.triviadeath2 .Key3,
+.triviadeath2 .Key4,
+.triviadeath2 .Key5,
+.triviadeath2 .Key6,
+.triviadeath2 .Key7,
+.triviadeath2 .Key8,
+.triviadeath2 .Key9,
+.triviadeath2 .Key10,
+.triviadeath2 .Key11,
+.triviadeath2 .Key12,
+.triviadeath2 .Key13,
+.triviadeath2 .Key14,
+.triviadeath2 .Key15,
+.triviadeath2 .Key16,
+.triviadeath2 .Key17,
+.triviadeath2 .Key18,
+.triviadeath2 .Key19,
+.triviadeath2 .Key20,
+.triviadeath2 .Key21,
+.triviadeath2 .Key22,
+.triviadeath2 .Key23,
+.triviadeath2 .Key24 {
+    width: 33%
+}
+
+.triviadeath2 .Key1 button,
+.triviadeath2 .Key2 button,
+.triviadeath2 .Key3 button,
+.triviadeath2 .Key4 button,
+.triviadeath2 .Key5 button,
+.triviadeath2 .Key6 button,
+.triviadeath2 .Key7 button,
+.triviadeath2 .Key8 button,
+.triviadeath2 .Key9 button,
+.triviadeath2 .Key10 button,
+.triviadeath2 .Key11 button,
+.triviadeath2 .Key12 button,
+.triviadeath2 .Key13 button,
+.triviadeath2 .Key14 button,
+.triviadeath2 .Key15 button,
+.triviadeath2 .Key16 button,
+.triviadeath2 .Key17 button,
+.triviadeath2 .Key18 button,
+.triviadeath2 .Key19 button,
+.triviadeath2 .Key20 button,
+.triviadeath2 .Key21 button,
+.triviadeath2 .Key22 button,
+.triviadeath2 .Key23 button,
+.triviadeath2 .Key24 button {
+    background-image: url(/images/6183b6eced8ce43899655d437cf5f117.png);
+    background-size: auto 2400%;
+    background-repeat: no-repeat;
+    height: 64px
+}
+
+.triviadeath2 .Lobby .choices {
+    padding: 5px 15px
+}
+
+.triviadeath2 .Lobby .choices .choice-button {
+    border-radius: 15px
+}
+
+.triviadeath2 .Lobby .lobbyTitle {
+    background-color: #fff;
+    padding: 5px
+}
+
+.triviadeath2 .MakeSingleChoice {
+    display: flex
+}
+
+.triviadeath2 .MakeSingleChoice .prompt {
+    background-color: #fff;
+    padding: 10px 15px
+}
+
+.triviadeath2 .MakeSingleChoice .controller-content {
+    display: flex;
+    flex-direction: column
+}
+
+.triviadeath2 .MakeSingleChoice .controller-content .chosen {
+    flex: 1 0 auto
+}
+
+.triviadeath2 .MakeSingleChoice .controller-content .chosen .chosenText {
+    color: #000;
+    font-size: 32px;
+    font-weight: 700;
+    padding-top: 15px
+}
+
+.triviadeath2 .MakeSingleChoice .makeSingleChoiceDone {
+    background-color: green
+}
+
+.triviadeath2 .MakeSingleChoice .check-button {
+    display: none
+}
+
+.triviadeath2 .MakeSingleChoice.FinalRound .prompt {
+    font-family: Coldstyle
+}
+
+.triviadeath2 .MakeSingleChoice.FinalRound .button-group .btn.choice-button {
+    border-radius: 15px
+}
+
+.triviadeath2 .MakeSingleChoice.FinalRound .button-group .check-button,
+.triviadeath2 .MakeSingleChoice.FinalRound .button-group .check-button:focus,
+.triviadeath2 .MakeSingleChoice.FinalRound .button-group .check-button:hover {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background-color: transparent;
+    background-image: url(/images/d93beec942494a25272ca8d1dd8a5a97.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain
+}
+
+.triviadeath2 .MakeSingleChoice.FinalRound .button-group.selected .check-button {
+    background-image: url(/images/44bc70eba3797def3894879b1df94c7f.png)
+}
+
+.triviadeath2 .MakeSingleChoice.FinalRound .button-group.selected .check-button button:focus,
+.triviadeath2 .MakeSingleChoice.FinalRound .button-group.selected .check-button button:hover:enabled {
+    background-color: transparent
+}
+
+.triviadeath2 .MakeSingleChoice.FinalRound .button-group:last-child .check-button {
+    display: none
+}
+
+.triviadeath2 .MakeSingleChoice .choices {
+    padding: 5px 15px
+}
+
+.triviadeath2 .MakeSingleChoice .choices .choice-button {
+    min-height: 64px;
+    width: 100%
+}
+
+.triviadeath2 .MakeSingleChoice .choices .MathChoice {
+    width: 50%
+}
+
+.triviadeath2 .MakeSingleChoice .choices .CutOffFinger button {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain
+}
+
+.triviadeath2 .MakeSingleChoice .choices .CutOffFinger:first-of-type button {
+    background-image: url(/images/d80e356563d4e1aa0e280be06934b9bc.png)
+}
+
+.triviadeath2 .MakeSingleChoice .choices .CutOffFinger:nth-of-type(2) button {
+    background-image: url(/images/0ce93797c05f488a7ee2a8c11fdeb168.png)
+}
+
+.triviadeath2 .MakeSingleChoice .choices .CutOffFinger:nth-of-type(3) button {
+    background-image: url(/images/7653c9d7552a026727f4b23069cbb8aa.png)
+}
+
+.triviadeath2 .MakeSingleChoice .choices .CutOffFinger:nth-of-type(4) button {
+    background-image: url(/images/61bb8785c3aa75c8d9ccef34265d0d20.png)
+}
+
+.triviadeath2 .MakeSingleChoice .choices .Box0,
+.triviadeath2 .MakeSingleChoice .choices .Box1,
+.triviadeath2 .MakeSingleChoice .choices .Box2,
+.triviadeath2 .MakeSingleChoice .choices .Box3,
+.triviadeath2 .MakeSingleChoice .choices .Box4,
+.triviadeath2 .MakeSingleChoice .choices .Box5,
+.triviadeath2 .MakeSingleChoice .choices .Box6,
+.triviadeath2 .MakeSingleChoice .choices .Box7 {
+    width: 96px;
+    height: 96px
+}
+
+.triviadeath2 .MakeSingleChoice .choices .Box0 button,
+.triviadeath2 .MakeSingleChoice .choices .Box1 button,
+.triviadeath2 .MakeSingleChoice .choices .Box2 button,
+.triviadeath2 .MakeSingleChoice .choices .Box3 button,
+.triviadeath2 .MakeSingleChoice .choices .Box4 button,
+.triviadeath2 .MakeSingleChoice .choices .Box5 button,
+.triviadeath2 .MakeSingleChoice .choices .Box6 button,
+.triviadeath2 .MakeSingleChoice .choices .Box7 button {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    width: auto
+}
+
+.triviadeath2 .MakeSingleChoice .choices .Box0 button {
+    background-image: url(/images/9f077509d6de814723a3b36e41c63985.png)
+}
+
+.triviadeath2 .MakeSingleChoice .choices .Box1 button {
+    background-image: url(/images/03b6de8aa8b858821344cde470d346f1.png)
+}
+
+.triviadeath2 .MakeSingleChoice .choices .Box2 button {
+    background-image: url(/images/dc23f3270c2aaebb8cf63986a7f4097c.png)
+}
+
+.triviadeath2 .MakeSingleChoice .choices .Box3 button {
+    background-image: url(/images/3baeafec12a2b916bbe0de34263b8eed.png)
+}
+
+.triviadeath2 .MakeSingleChoice .choices .Box4 button {
+    background-image: url(/images/7cc315b6868dbdbc2539a4f0c83e6ad8.png)
+}
+
+.triviadeath2 .MakeSingleChoice .choices .Box5 button {
+    background-image: url(/images/df00a13293e2aea9d817fff38a5a0ed4.png)
+}
+
+.triviadeath2 .MakeSingleChoice .choices .Box6 button {
+    background-image: url(/images/32f32e217163bd20a22576d41d51aa4b.png)
+}
+
+.triviadeath2 .MakeSingleChoice .choices .Box7 button {
+    background-image: url(/images/e94079182f73c740496571e96157d117.png)
+}
+
+.triviadeath2 .MakeSingleChoice .choices .Chalice0,
+.triviadeath2 .MakeSingleChoice .choices .Chalice1,
+.triviadeath2 .MakeSingleChoice .choices .Chalice2,
+.triviadeath2 .MakeSingleChoice .choices .Chalice3,
+.triviadeath2 .MakeSingleChoice .choices .Chalice4,
+.triviadeath2 .MakeSingleChoice .choices .Chalice5,
+.triviadeath2 .MakeSingleChoice .choices .Chalice6,
+.triviadeath2 .MakeSingleChoice .choices .Chalice7,
+.triviadeath2 .MakeSingleChoice .choices .Chalice8,
+.triviadeath2 .MakeSingleChoice .choices .Chalice9,
+.triviadeath2 .MakeSingleChoice .choices .Chalice10,
+.triviadeath2 .MakeSingleChoice .choices .Chalice11 {
+    width: 100px;
+    height: 149px
+}
+
+.triviadeath2 .MakeSingleChoice .choices .Chalice0 button,
+.triviadeath2 .MakeSingleChoice .choices .Chalice1 button,
+.triviadeath2 .MakeSingleChoice .choices .Chalice2 button,
+.triviadeath2 .MakeSingleChoice .choices .Chalice3 button,
+.triviadeath2 .MakeSingleChoice .choices .Chalice4 button,
+.triviadeath2 .MakeSingleChoice .choices .Chalice5 button,
+.triviadeath2 .MakeSingleChoice .choices .Chalice6 button,
+.triviadeath2 .MakeSingleChoice .choices .Chalice7 button,
+.triviadeath2 .MakeSingleChoice .choices .Chalice8 button,
+.triviadeath2 .MakeSingleChoice .choices .Chalice9 button,
+.triviadeath2 .MakeSingleChoice .choices .Chalice10 button,
+.triviadeath2 .MakeSingleChoice .choices .Chalice11 button {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    width: auto
+}
+
+.triviadeath2 .MakeSingleChoice .choices .Chalice0 button {
+    background-image: url(/images/36c4160cadfd46bc29d64a67d7fdd91f.png)
+}
+
+.triviadeath2 .MakeSingleChoice .choices .Chalice1 button {
+    background-image: url(/images/170965036b227a2fc25b39799f7a95c6.png)
+}
+
+.triviadeath2 .MakeSingleChoice .choices .Chalice2 button {
+    background-image: url(/images/2baf7cb68a87399ae2e63cbfbb6b0bcf.png)
+}
+
+.triviadeath2 .MakeSingleChoice .choices .Chalice3 button {
+    background-image: url(/images/d4ffb964e072a847f9b969245456df9d.png)
+}
+
+.triviadeath2 .MakeSingleChoice .choices .Chalice4 button {
+    background-image: url(/images/2a9c8933c2fddcd4daff71ff39786673.png)
+}
+
+.triviadeath2 .MakeSingleChoice .choices .Chalice5 button {
+    background-image: url(/images/cd8815f288f9cacc991f120d61e44dd9.png)
+}
+
+.triviadeath2 .MakeSingleChoice .choices .Chalice6 button {
+    background-image: url(/images/cf1aef7c95dfcc6f374f52c8ae94426b.png)
+}
+
+.triviadeath2 .MakeSingleChoice .choices .Chalice7 button {
+    background-image: url(/images/c0bc66f738a65d9c25aefd3c4bebaf16.png)
+}
+
+.triviadeath2 .MakeSingleChoice .choices .Chalice8 button {
+    background-image: url(/images/16bc51c80db9b24a68dd1b6c9be23ca5.png)
+}
+
+.triviadeath2 .MakeSingleChoice .choices .Chalice9 button {
+    background-image: url(/images/1f936aff331637991cfe00e9d047836a.png)
+}
+
+.triviadeath2 .MakeSingleChoice .choices .Chalice10 button {
+    background-image: url(/images/fffc98978fea5429ec443f7bed50aaf2.png)
+}
+
+.triviadeath2 .MakeSingleChoice .choices .Chalice11 button {
+    background-image: url(/images/ebc54044002eef814982b56a719e016b.png)
+}
+
+.triviadeath2 .Draw .prompt {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 15px
+}
+
+.triviadeath2 .Draw canvas {
+    background: #fff;
+    border: 1px solid #000
+}
+
+.triviadeath2 .Draw.Mirror canvas {
+    background-image: url(/images/7a7657ae4a4cd2579907fbdb9f3ddad3.jpg)
+}
+
+.triviadeath2 .Draw.Mirror canvas,
+.triviadeath2 .Draw.Tattoos canvas {
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat
+}
+
+.triviadeath2 .Draw.Tattoos canvas {
+    background-image: url(/images/f8800267265bc9107040b6e89be91ba5.jpg)
+}
+
+.triviadeath2 .EnterSingleText .prompt {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 15px
+}
+
+.triviadeath2 .EnterSingleText .inputGroup {
+    padding: 10px 15px
+}
+
+.triviadeath2 .EnterSingleText .dictation-input {
+    height: auto
+}
+
+.triviadeath2 .EnterSingleText .dictation-before {
+    color: green
+}
+
+.triviadeath2 .EnterSingleText .dictation-after {
+    user-select: none;
+    color: grey
+}
+
+.triviadeath2 .EnterSingleText .incorrect {
+    color: red
+}
+
+.triviadeath2 .EnterSingleText .correct {
+    color: green
+}
+
+.triviadeath2 .EnterSingleText.Password .prompt {
+    background-color: transparent;
+    padding: 0
+}
+
+.triviadeath2 .EnterSingleText.Password .prompt .text>div:first-child {
+    padding: 10px 15px;
+    background-color: #fff
+}
+
+.triviadeath2 .EnterSingleText.Password .letter {
+    color: #000;
+    font-size: 30px;
+    border-radius: 2px;
+    display: inline-block;
+    width: 24px;
+    height: 50px;
+    background-color: #888;
+    margin: 2px;
+    padding-top: 5px;
+    vertical-align: middle
+}
+
+.triviadeath2 .EnterSingleText.Password .letter.unknown {
+    background-color: #000
+}
+
+.triviadeath2 .EnterSingleText.Password .word {
+    display: inline-block;
+    padding: 1px;
+    border: 2px solid #000;
+    border-radius: 6px;
+    margin: 10px 5px;
+    line-height: 18px
+}
+
+.triviadeath2 .EnterSingleText.Password .word.solved {
+    border-color: #fff
+}
+
+.triviadeath2 .EnterSingleText.Password .word.solved .letter {
+    background-color: #fff
+}
+
+.triviadeath2 .Scratch canvas {
+    width: 100%;
+    max-width: 640px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(/images/3f7efe11be94d1edb3d2508ce04249a9.png);
+    background-color: transparent;
+    border: none
+}
+
+.triviadeath2 .Grid {
+    text-align: center
+}
+
+.triviadeath2 .Grid .instructions {
+    width: 100%
+}
+
+.triviadeath2 .Grid .error {
+    width: 100%;
+    color: red;
+    background-color: #fff
+}
+
+.triviadeath2 .Grid .skewer2,
+.triviadeath2 .Grid .skewer3,
+.triviadeath2 .Grid .skewer4 {
+    height: 64px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin-top: 16px
+}
+
+.triviadeath2 .Grid .skewer2 {
+    background-image: url(/images/9eedd11ec47c41e194daae22d014a61b.png)
+}
+
+.triviadeath2 .Grid .skewer3 {
+    background-image: url(/images/2f3fed03f5c1f83fed9eb5280970a797.png)
+}
+
+.triviadeath2 .Grid .skewer4 {
+    background-image: url(/images/833a999585bca6589207c71e7cfad5db.png)
+}
+
+.triviadeath2 .Grid .grid {
+    display: flex;
+    max-width: 480px;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin: auto
+}
+
+.triviadeath2 .Grid .grid-row {
+    display: flex;
+    width: 100%;
+    max-width: 480px
+}
+
+.triviadeath2 .Grid .grid-cell:before {
+    content: "";
+    display: inline-block;
+    padding-top: 100%
+}
+
+.triviadeath2 .Grid .grid-cell {
+    color: #000;
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: center;
+    align-items: stretch;
+    box-sizing: border-box;
+    padding: 2px;
+    height: 100%
+}
+
+.triviadeath2 .Grid .grid-cell.none,
+.triviadeath2 .Grid .grid-cell.None {
+    background-color: transparent
+}
+
+.triviadeath2 .Grid .grid-cell.none .grid-contents,
+.triviadeath2 .Grid .grid-cell.None .grid-contents {
+    background-color: transparent;
+    border: 0 solid #000
+}
+
+.triviadeath2 .Grid .grid-cell.stab .grid-contents,
+.triviadeath2 .Grid .grid-cell.Stab .grid-contents {
+    border: 0 solid #000;
+    background-color: #000;
+    border-radius: 6px;
+    background-image: url(/images/42b8cb0e7dae8b1ffdc5456801a7c4ce.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+    background-size: 50%;
+    width: 75%;
+    min-height: 64px
+}
+
+.triviadeath2 .Grid .grid-cell.stab:first-child,
+.triviadeath2 .Grid .grid-cell.Stab:first-child {
+    transform: rotate(270deg)
+}
+
+.triviadeath2 .Grid .grid-cell.stab:last-child,
+.triviadeath2 .Grid .grid-cell.Stab:last-child {
+    transform: rotate(90deg)
+}
+
+.triviadeath2 .Grid .grid-cell.grid .instructions,
+.triviadeath2 .Grid .grid-cell.Hide .instructions {
+    background-color: #fff
+}
+
+.triviadeath2 .Grid .grid-cell.grid .grid-contents,
+.triviadeath2 .Grid .grid-cell.Hide .grid-contents {
+    border: 0 solid #000;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    background-color: #000
+}
+
+.triviadeath2 .Grid .grid-cell.grid .grid-contents:hover,
+.triviadeath2 .Grid .grid-cell.Hide .grid-contents:hover {
+    background-color: #111
+}
+
+.triviadeath2 .Grid .grid-cell.grid .grid-contents:active,
+.triviadeath2 .Grid .grid-cell.Hide .grid-contents:active {
+    background-color: #888
+}
+
+.triviadeath2 .Grid .grid-cell.disabled .grid-contents,
+.triviadeath2 .Grid .grid-cell.Disabled .grid-contents {
+    border: 0 solid #000;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    background-color: #000;
+    opacity: .3
+}
+
+.triviadeath2 .Grid .grid-cell-4 {
+    flex: 0 0 25%
+}
+
+.triviadeath2 .Grid .grid-cell-5 {
+    flex: 0 0 20%
+}
+
+.triviadeath2 .Grid .grid-cell-6 {
+    flex: 0 0 16.67%
+}
+
+.triviadeath2 .Grid .grid-cell-7 {
+    flex: 0 0 14.28%
+}
+
+.triviadeath2 .Drop .prompt,
+.triviadeath2 .Grid .prompt {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 15px
+}
+
+.triviadeath2 .playerTopBarView.Green {
+    color: #89b478;
+    background: #193c19
+}
+
+.triviadeath2 .controller-page>.Green {
+    color: #89b478;
+    background: url(/images/1cc44ec1b26c8ce47ee10b1e917453e3.png) no-repeat 50%/cover #193c19
+}
+
+.triviadeath2 .controller-page>.Green .instructions,
+.triviadeath2 .controller-page>.Green .lobbyTitle,
+.triviadeath2 .controller-page>.Green .prompt {
+    color: #193c19
+}
+
+.triviadeath2 .controller-page>.Green .button-group.submit button {
+    color: #fff;
+    background-color: #89b478
+}
+
+.triviadeath2 .GhostGreen button {
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    background-color: #193c19;
+    background-image: url(/images/248164a0383297111845c0fa9a1b5701.png)
+}
+
+.triviadeath2 .playerTopBarView.Purple {
+    color: #9b7daf;
+    background: #3c2846
+}
+
+.triviadeath2 .controller-page>.Purple {
+    color: #9b7daf;
+    background: url(/images/ff6182b64faea066426ef7abaaa31d48.png) no-repeat 50%/cover #3c2846
+}
+
+.triviadeath2 .controller-page>.Purple .instructions,
+.triviadeath2 .controller-page>.Purple .lobbyTitle,
+.triviadeath2 .controller-page>.Purple .prompt {
+    color: #3c2846
+}
+
+.triviadeath2 .controller-page>.Purple .button-group.submit button {
+    color: #fff;
+    background-color: #9b7daf
+}
+
+.triviadeath2 .GhostPurple button {
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    background-color: #3c2846;
+    background-image: url(/images/8b9f0bb198851873a671a25aa414c8e3.png)
+}
+
+.triviadeath2 .playerTopBarView.Blue {
+    color: #6e9be1;
+    background: #1e3755
+}
+
+.triviadeath2 .controller-page>.Blue {
+    color: #6e9be1;
+    background: url(/images/4974b770cec356a3822eca86e592b799.png) no-repeat 50%/cover #1e3755
+}
+
+.triviadeath2 .controller-page>.Blue .instructions,
+.triviadeath2 .controller-page>.Blue .lobbyTitle,
+.triviadeath2 .controller-page>.Blue .prompt {
+    color: #1e3755
+}
+
+.triviadeath2 .controller-page>.Blue .button-group.submit button {
+    color: #fff;
+    background-color: #6e9be1
+}
+
+.triviadeath2 .GhostBlue button {
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    background-color: #1e3755;
+    background-image: url(/images/3a69b44a1ed18c8c596149c4e8feb14e.png)
+}
+
+.triviadeath2 .playerTopBarView.Gray {
+    color: #afafaf;
+    background: #383838
+}
+
+.triviadeath2 .controller-page>.Gray {
+    color: #afafaf;
+    background: url(/images/6194da31afe01215be2f6c708dd5ce31.png) no-repeat 50%/cover #383838
+}
+
+.triviadeath2 .controller-page>.Gray .instructions,
+.triviadeath2 .controller-page>.Gray .lobbyTitle,
+.triviadeath2 .controller-page>.Gray .prompt {
+    color: #383838
+}
+
+.triviadeath2 .controller-page>.Gray .button-group.submit button {
+    color: #fff;
+    background-color: #afafaf
+}
+
+.triviadeath2 .GhostGray button {
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    background-color: #383838;
+    background-image: url(/images/6e098c641cfe00fa15b63af629bd7bd5.png)
+}
+
+.triviadeath2 .playerTopBarView.Yellow {
+    color: #ebdca0;
+    background: #50461e
+}
+
+.triviadeath2 .controller-page>.Yellow {
+    color: #ebdca0;
+    background: url(/images/dc889d3f35397c0d3f2ca9659d329877.png) no-repeat 50%/cover #50461e
+}
+
+.triviadeath2 .controller-page>.Yellow .instructions,
+.triviadeath2 .controller-page>.Yellow .lobbyTitle,
+.triviadeath2 .controller-page>.Yellow .prompt {
+    color: #50461e
+}
+
+.triviadeath2 .controller-page>.Yellow .button-group.submit button {
+    color: #fff;
+    background-color: #ebdca0
+}
+
+.triviadeath2 .GhostYellow button {
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    background-color: #50461e;
+    background-image: url(/images/96a3e050184d9386e4a2d9d96ea0d1ea.png)
+}
+
+.triviadeath2 .playerTopBarView.Orange {
+    color: #e1af78;
+    background: #5f3c28
+}
+
+.triviadeath2 .controller-page>.Orange {
+    color: #e1af78;
+    background: url(/images/94323c596379ab29583fe0becd057a4f.png) no-repeat 50%/cover #5f3c28
+}
+
+.triviadeath2 .controller-page>.Orange .instructions,
+.triviadeath2 .controller-page>.Orange .lobbyTitle,
+.triviadeath2 .controller-page>.Orange .prompt {
+    color: #5f3c28
+}
+
+.triviadeath2 .controller-page>.Orange .button-group.submit button {
+    color: #fff;
+    background-color: #e1af78
+}
+
+.triviadeath2 .GhostOrange button {
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    background-color: #5f3c28;
+    background-image: url(/images/69fe7166d1d9d87652f18b40b07cc99b.png)
+}
+
+.triviadeath2 .playerTopBarView.Red {
+    color: #fa9696;
+    background: #5a1919
+}
+
+.triviadeath2 .controller-page>.Red {
+    color: #fa9696;
+    background: url(/images/1318ef2108d307c82a27e0f6045ef310.png) no-repeat 50%/cover #5a1919
+}
+
+.triviadeath2 .controller-page>.Red .instructions,
+.triviadeath2 .controller-page>.Red .lobbyTitle,
+.triviadeath2 .controller-page>.Red .prompt {
+    color: #5a1919
+}
+
+.triviadeath2 .controller-page>.Red .button-group.submit button {
+    color: #fff;
+    background-color: #fa9696
+}
+
+.triviadeath2 .GhostRed button {
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    background-color: #5a1919;
+    background-image: url(/images/5000e355803f709c39e89eb0d54d3efa.png)
+}
+
+.triviadeath2 .playerTopBarView.Pink {
+    color: #e191a5;
+    background: #873250
+}
+
+.triviadeath2 .controller-page>.Pink {
+    color: #e191a5;
+    background: url(/images/cc989b8fbfafed76d7f631c333b816ad.png) no-repeat 50%/cover #873250
+}
+
+.triviadeath2 .controller-page>.Pink .instructions,
+.triviadeath2 .controller-page>.Pink .lobbyTitle,
+.triviadeath2 .controller-page>.Pink .prompt {
+    color: #873250
+}
+
+.triviadeath2 .controller-page>.Pink .button-group.submit button {
+    color: #fff;
+    background-color: #e191a5
+}
+
+.triviadeath2 .GhostPink button {
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    background-color: #873250;
+    background-image: url(/images/3d77960f28790ee1f17761fe7fa4ff36.png)
+}
+
+.triviadeath2 .playerTopBarView.Audience {
+    color: #f0d2be;
+    background: #503c2d
+}
+
+.triviadeath2 .controller-page>.Audience {
+    color: #f0d2be;
+    background: url(/images/f49186ead9e73151efe35610584cb204.png) no-repeat 50%/cover #503c2d
+}
+
+.triviadeath2 .controller-page>.Audience .instructions,
+.triviadeath2 .controller-page>.Audience .lobbyTitle,
+.triviadeath2 .controller-page>.Audience .prompt {
+    color: #503c2d
+}
+
+.triviadeath2 .controller-page>.Audience .button-group.submit button {
+    color: #fff;
+    background-color: #f0d2be
+}
+
+.triviadeath2 .GhostAudience button {
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    background-color: #503c2d;
+    background-image: url(/images/248164a0383297111845c0fa9a1b5701.png)
+}
+
+.triviadeath2 .controller-page>.Logo {
+    background: #000
+}
+
+.triviadeath2 .Dial canvas {
+    margin: 0 auto
+}
+
+.triviadeath2 .Dial button {
+    display: block;
+    margin: 0 auto;
+    background-color: #000;
+    font-size: 40px;
+    padding: 20px 50px;
+    color: red;
+    border-radius: 15px;
+    border: 0 solid #000
+}
+
+.triviadeath2 .Dial button:active {
+    background-color: #fff;
+    color: #000
+}
+
+.triviadeath2 .Drift .prompt,
+.triviadeath2 .NowThatsWhatICallMadness .prompt {
+    animation-name: drift0;
+    animation-duration: 20s;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+    animation-fill-mode: forwards
+}
+
+.triviadeath2 .Drift .choices .button-group,
+.triviadeath2 .NowThatsWhatICallMadness .choices .button-group {
+    animation-name: drift1;
+    animation-duration: 20s;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+    animation-fill-mode: forwards
+}
+
+.triviadeath2 .Drift .choices .button-group:nth-of-type(4n+1),
+.triviadeath2 .NowThatsWhatICallMadness .choices .button-group:nth-of-type(4n+1) {
+    animation-name: drift1
+}
+
+.triviadeath2 .Drift .choices .button-group:nth-of-type(4n+2),
+.triviadeath2 .NowThatsWhatICallMadness .choices .button-group:nth-of-type(4n+2) {
+    animation-name: drift2
+}
+
+.triviadeath2 .Drift .choices .button-group:nth-of-type(4n+3),
+.triviadeath2 .NowThatsWhatICallMadness .choices .button-group:nth-of-type(4n+3) {
+    animation-name: drift3
+}
+
+.triviadeath2 .Drift .choices .button-group:nth-of-type(4n+4),
+.triviadeath2 .NowThatsWhatICallMadness .choices .button-group:nth-of-type(4n+4) {
+    animation-name: drift4
+}
+
+.triviadeath2 .BTTF .choice-button,
+.triviadeath2 .NowThatsWhatICallMadness .choice-button {
+    animation-name: half-disappear;
+    animation-duration: 15s;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+    animation-fill-mode: forwards
+}
+
+.triviadeath2 .BTTF .disappear-0,
+.triviadeath2 .BTTF .disappear-1,
+.triviadeath2 .BTTF .disappear-2,
+.triviadeath2 .BTTF .disappear-3,
+.triviadeath2 .BTTF .disappear-4,
+.triviadeath2 .NowThatsWhatICallMadness .disappear-0,
+.triviadeath2 .NowThatsWhatICallMadness .disappear-1,
+.triviadeath2 .NowThatsWhatICallMadness .disappear-2,
+.triviadeath2 .NowThatsWhatICallMadness .disappear-3,
+.triviadeath2 .NowThatsWhatICallMadness .disappear-4 {
+    animation-name: disappear;
+    animation-duration: 3.5s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-fill-mode: forwards
+}
+
+.triviadeath2 .BTTF .disappear-0,
+.triviadeath2 .NowThatsWhatICallMadness .disappear-0 {
+    animation-delay: 0s
+}
+
+.triviadeath2 .BTTF .disappear-1,
+.triviadeath2 .NowThatsWhatICallMadness .disappear-1 {
+    animation-delay: 1.5s
+}
+
+.triviadeath2 .BTTF .disappear-2,
+.triviadeath2 .NowThatsWhatICallMadness .disappear-2 {
+    animation-delay: 3s
+}
+
+.triviadeath2 .BTTF .disappear-3,
+.triviadeath2 .NowThatsWhatICallMadness .disappear-3 {
+    animation-delay: 4.5s
+}
+
+.triviadeath2 .BTTF .disappear-4,
+.triviadeath2 .NowThatsWhatICallMadness .disappear-4 {
+    animation-delay: 6s
+}
+
+.triviadeath2 .Drips .controller-content:after,
+.triviadeath2 .Drips .controller-content:before,
+.triviadeath2 .Drips:after,
+.triviadeath2 .Drips:before,
+.triviadeath2 .NowThatsWhatICallMadness .controller-content:after,
+.triviadeath2 .NowThatsWhatICallMadness .controller-content:before,
+.triviadeath2 .NowThatsWhatICallMadness:after,
+.triviadeath2 .NowThatsWhatICallMadness:before {
+    pointer-events: none;
+    z-index: 1000;
+    content: "";
+    background-image: url(/images/b631c363700da60f9e27da945f2e8352.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    position: absolute;
+    transform: scale(0);
+    animation: drip 1.4s cubic-bezier(.075, .82, .165, 1) normal;
+    animation-fill-mode: forwards;
+    opacity: .95
+}
+
+.triviadeath2 .Drips .controller-content:before,
+.triviadeath2 .NowThatsWhatICallMadness .controller-content:before {
+    background-image: url(/images/46e6a9aff8e25bc9c2aaef4574924f19.png);
+    width: 92px;
+    height: 92px;
+    left: 25vw;
+    top: 25vh;
+    animation-delay: .7s
+}
+
+.triviadeath2 .Drips .controller-content:after,
+.triviadeath2 .NowThatsWhatICallMadness .controller-content:after {
+    background-image: url(/images/0f3067deba83aef455331d91de8e300f.png);
+    width: 128px;
+    height: 128px;
+    left: 50vw;
+    top: 50vh;
+    animation-delay: 1.6s
+}
+
+.triviadeath2 .Drips:before,
+.triviadeath2 .NowThatsWhatICallMadness:before {
+    background-image: url(/images/b631c363700da60f9e27da945f2e8352.png);
+    width: 48px;
+    height: 48px;
+    left: 25vw;
+    top: 75vh;
+    animation-delay: 2.3s
+}
+
+.triviadeath2 .Drips:after,
+.triviadeath2 .NowThatsWhatICallMadness:after {
+    background-image: url(/images/f0e305441f2ce06b8ebaf8cdb28fe03f.png);
+    width: 48px;
+    height: 48px;
+    left: 65vw;
+    top: 78vh;
+    animation-delay: 2.7s
+}
+
+.triviadeath2 .Bugs .controller-content:after,
+.triviadeath2 .NowThatsWhatICallMadness .controller-content:after {
+    z-index: 1000;
+    content: "";
+    width: 167px;
+    height: 131px;
+    background-image: url(/images/f0d4a7a21ebe5ec3e295814286b24f35.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    position: absolute;
+    left: -200px;
+    top: -200px;
+    animation: moveX 1.6s cubic-bezier(.11, .58, .86, .43) normal, moveY 1.6s ease-in-out normal, skitter 1.6s linear normal;
+    animation-delay: .6s, .6s, .6s;
+    animation-fill-mode: forwards, forwards, forwards
+}
+
+.triviadeath2 .NowThatsWhatICallMadness .choice-button,
+.triviadeath2 .NowThatsWhatICallMadness .prompt,
+.triviadeath2 .Rainbow .choice-button,
+.triviadeath2 .Rainbow .prompt {
+    animation: animated-rainbow-shadow 1s infinite
+}
+
+@keyframes animated-rainbow-shadow {
+    0% {
+        text-shadow: 0 0 transparent, -8px -11px red, 6px 0 red, 12px 6px orange, -6px 12px orange, 1px -11px orange, -9px 5px #ff0, -2px -4px #ff0, 2px 0 #ff0, 8px 3px #00f, 6px 7px #00f, -6px 7px #00f, 6px -9px red
+    }
+
+    8.33333% {
+        text-shadow: 0 0 transparent, 11px -8px red, -10px -5px orange, -7px -10px orange, 1px 9px orange, -6px -8px #ff0, 6px -10px #ff0, -6px 9px #ff0, -1px 12px #00f, 6px -7px #00f, 1px -6px #00f, 3px 9px red, 1px 1px red
+    }
+
+    16.66667% {
+        text-shadow: 0 0 transparent, 11px -1px orange, -1px 11px orange, -4px -8px orange, 7px 4px #ff0, 12px -10px #ff0, 6px 2px #ff0, -5px 9px #00f, 12px -10px #00f, -3px 8px #00f, 12px 3px red, 4px -1px red, -6px -3px red
+    }
+
+    25% {
+        text-shadow: 0 0 transparent, 4px 10px orange, 3px 0 orange, 0 3px #ff0, -7px -8px #ff0, -3px -9px #ff0, 1px -7px #00f, 4px 5px #00f, 12px -8px #00f, 8px -1px red, 12px 9px red, -1px 4px red, -1px 1px orange
+    }
+
+    33.33333% {
+        text-shadow: 0 0 transparent, 4px -7px orange, 10px -6px #ff0, 7px 1px #ff0, 3px 9px #ff0, -2px 1px #00f, 8px 4px #00f, 4px 3px #00f, 2px 10px red, -3px -11px red, 10px -11px red, 5px -7px orange, 1px -7px orange
+    }
+
+    41.66667% {
+        text-shadow: 0 0 transparent, -11px 2px #ff0, -5px -10px #ff0, -8px -9px #ff0, 0 -2px #00f, 3px 2px #00f, 6px 7px #00f, -6px -11px red, 3px 7px red, 0 -4px red, 9px 10px orange, -1px -11px orange, -7px -8px orange
+    }
+
+    50% {
+        text-shadow: 0 0 transparent, -1px 6px #ff0, -9px 10px #ff0, 1px 0 #00f, 5px 7px #00f, -11px 4px #00f, -11px 1px red, 7px -11px red, 12px -4px red, -5px 6px orange, 5px -9px orange, 8px -3px orange, 6px 4px #ff0
+    }
+
+    58.33333% {
+        text-shadow: 0 0 transparent, 2px 9px #ff0, 6px -5px #00f, 12px 12px #00f, 9px -7px #00f, -1px 1px red, -1px 4px red, -8px 5px red, -8px 1px orange, 9px 6px orange, -9px 4px orange, 10px 3px #ff0, -11px -3px #ff0
+    }
+
+    66.66667% {
+        text-shadow: 0 0 transparent, -7px 12px #00f, 2px -7px #00f, 9px 10px #00f, -9px 12px red, -11px 6px red, -1px 0 red, -2px 8px orange, -4px 3px orange, 4px -3px orange, -4px 9px #ff0, 7px 7px #ff0, 9px -9px #ff0
+    }
+
+    75% {
+        text-shadow: 0 0 transparent, -6px -11px #00f, -2px 4px #00f, -8px -7px red, 10px 9px red, 7px 8px red, 7px 2px orange, -6px 1px orange, -7px 6px orange, 9px -8px #ff0, 6px -3px #ff0, -10px 5px #ff0, 1px -11px #00f
+    }
+
+    83.33333% {
+        text-shadow: 0 0 transparent, 11px -3px #00f, -9px 10px red, 9px -3px red, -5px -8px red, -7px -4px orange, -6px 11px orange, -3px 6px orange, -8px -11px #ff0, -3px -6px #ff0, -2px 7px #ff0, 9px -3px #00f, 5px -7px #00f
+    }
+
+    91.66667% {
+        text-shadow: 0 0 transparent, 3px 1px red, -9px 4px red, -9px 10px red, -1px 3px orange, -5px 2px orange, 4px 7px orange, -3px -8px #ff0, 10px -1px #ff0, 1px 4px #ff0, 5px -9px #00f, 9px -6px #00f, 6px 6px #00f
+    }
+
+    to {
+        text-shadow: 0 0 transparent, -8px 11px red, -11px -5px red, 8px -10px orange, -1px -10px orange, 2px 0 orange, 3px 0 #ff0, 4px -5px #ff0, 4px 10px #ff0, 0 8px #00f, -4px 12px #00f, -10px -11px #00f, 2px 11px red
+    }
+}
+
+@keyframes drip {
+    0% {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+@keyframes skitter {
+    0% {
+        transform: rotate(90deg)
+    }
+
+    40% {
+        transform: rotate(165deg)
+    }
+
+    60% {
+        transform: rotate(170deg)
+    }
+
+    to {
+        transform: rotate(95deg)
+    }
+}
+
+@keyframes moveX {
+    0% {
+        left: -217px
+    }
+
+    to {
+        left: 100vw
+    }
+}
+
+@keyframes moveY {
+    0% {
+        top: 50px
+    }
+
+    to {
+        top: calc(100vh - 217px)
+    }
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1
+    }
+
+    80% {
+        color: red
+    }
+
+    to {
+        color: red;
+        opacity: 0
+    }
+}
+
+@keyframes half-disappear {
+    0% {
+        opacity: 1
+    }
+
+    to {
+        color: red;
+        opacity: .5
+    }
+}
+
+@keyframes drift0 {
+    0% {
+        transform: translate(0) rotate(0deg)
+    }
+
+    to {
+        transform: translate(-50vw, 100vh) rotate(-90deg)
+    }
+}
+
+@keyframes drift1 {
+    0% {
+        transform: translate(0) rotate(0deg)
+    }
+
+    to {
+        transform: translate(-90vw, -25vh) rotate(-90deg)
+    }
+}
+
+@keyframes drift2 {
+    0% {
+        transform: translate(0) rotate(0deg)
+    }
+
+    to {
+        transform: translate(110vw, -15vh) rotate(45deg)
+    }
+}
+
+@keyframes drift3 {
+    0% {
+        transform: translate(0) rotate(0deg)
+    }
+
+    to {
+        transform: translate(100vw, 35vh) rotate(90deg)
+    }
+}
+
+@keyframes drift4 {
+    0% {
+        transform: translate(0) rotate(0deg)
+    }
+
+    to {
+        transform: translate(-100vw, 55vh) rotate(-135deg)
+    }
+}
