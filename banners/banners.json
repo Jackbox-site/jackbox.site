@@ -1,0 +1,33 @@
+{
+    "bannerAds": [{
+            "text": "Discord!",
+            "src": "https://jackbox.site/banners/1.png",
+            "href": "https://discord.gg/easyblake"
+        },
+        {
+            "text": "Доступен для всех!",
+            "src": "https://jackbox.site/banners/2.jpg",
+            "href": "https://tdot.space/jpp7"
+		},
+        {
+            "text": "Первый трейлер",
+            "src": "https://jackbox.site/banners/3.png",
+            "href": "https://www.youtube.com/watch?v=irqqQhmYTPY"
+		},
+        {
+            "text": "Поддержите нас!",
+            "src": "https://jackbox.site/banners/4.png",
+            "href": "https:/qiwi.com/n/RYSIK5318"
+		},
+        {
+            "text": "Мы в ВК!",
+            "src": "https://jackbox.site/banners/5.png",
+            "href": "https://vk.com/jackbox.site"
+		},
+        {
+            "text": "Функция модера!",
+            "src": "https://jackbox.site/banners/6.png",
+            "href": "https://jackbox.site/#moderation"
+        }
+    ]
+}
